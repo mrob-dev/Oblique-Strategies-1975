@@ -11,3 +11,5 @@ The **Oblique Strategies** constitute a set of over 100 cards, each of which is 
 These famous cards have been used by many artists and creative people all over the world since their initial publication.
 
 This simple HTML/JS page allows the user to be presented with a random card drawn from the deck by clicking on a button.
+
+A live version of the site is accessible here: https://robinsonmatthew.github.io/Oblique-Strategies-1975/
