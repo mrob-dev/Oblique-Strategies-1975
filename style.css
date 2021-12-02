@@ -1,0 +1,144 @@
+/* Imports Open Sans font from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Tinos:wght@700&display=swap');
+
+
+/* Universal Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: whitesmoke;
+}
+
+.vertical-center {
+  margin: auto;
+  position: relative;
+  -ms-transform: translateY(10%);
+  transform: translateY(10%);
+}
+
+h1 {
+  color: #d2a65f;
+  font-family: Lora;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 15px;
+}
+
+
+/* Oblique Card Styling */
+#oblique {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  min-height: 16vh;
+  max-height: auto;
+  min-width: 34vh;
+  max-width: 34vh;
+  margin: 30px auto;
+  color: black;
+  padding:1.2em 30px 1.2em 30px;
+  border-radius: 25px;
+  line-height:1.6;
+  background: white;
+
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+
+}
+ 
+ 
+/* Button Styling */
+button {
+    
+    padding: 0.9em 2em;
+    border: 0px solid black;
+    position: relative;
+    overflow: hidden;
+    background-color: whitesmoke;;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: black;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 400%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: black;
+    transition: .5s ease;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+   
+   button:hover {
+    color: #d2a65f;
+   }
+
+#buttondiv {
+  display: flex;
+  margin: auto;flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 150px;
+}
+
+#title {
+  width: 300px;
+  margin: auto;
+  padding: 0.9em 2em;
+  text-align: center;
+  background-color: black;
+
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+#maintext {
+  width: 450px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#footer {
+  width: 450px;
+  margin: auto;
+  text-align: center;
+}
+
+#footertext {
+  font-weight: bold;
+  font-size: 13px;
+}
